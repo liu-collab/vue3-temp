@@ -1,6 +1,7 @@
 <template>
   <h2>{{ $store.state.name }}</h2>
-  <router-link to="/login">登录</router-link>
+  <router-link to="/login">login</router-link>
+  <br />
   <router-link to="/main">main</router-link>
   <router-view></router-view>
 </template>
@@ -23,7 +24,7 @@ export default defineComponent({
   color: #2c3e50;
   margin-top: 60px;
 }
-.app{
+.app {
   color: red;
 }
 </style>

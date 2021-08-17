@@ -12,14 +12,14 @@ const Request = new YQRequest({
         config.headers.Authorization = `Bearer ${token}`
       }
       // console.log(config.headers.Authorization)
-      console.log("请求拦截成功")
+      //   console.log("请求拦截成功")
       return config
     },
     requesrInterceptorsCath: error => {
       return error
     },
     responseInterceptors: res => {
-      console.log("响应拦截成功")
+      // console.log("响应拦截成功")
       return res
     },
     responseInterceptotrsCath: error => {
