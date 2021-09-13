@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
-import 'normalize.css'
-import './assets/css/index.less'
+import 'normalize.css';
+import './assets/css/index.less';
 //import './service/axios-demo'
 //全局引入
 // import ElementPlus from 'element-plus'
@@ -10,14 +10,14 @@ import './assets/css/index.less'
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import { globalRegister } from './global'
+import { globalRegister } from './global';
 
 //import Request from './service'
-const app = createApp(App)
+const app = createApp(App);
 //globalRegister(app)
-app.use(globalRegister)
-app.use(router)
-app.use(store)
+app.use(globalRegister);
+app.use(router);
+app.use(store);
 
 app.mount('#app');
 
@@ -34,7 +34,6 @@ app.mount('#app');
 
 // Request.get<DataType>({
 //   url: "",
-
 
 // }).then(res => {
 //   console.log(res.data)

@@ -1,5 +1,5 @@
-import { App } from 'vue'
-import 'element-plus/lib/theme-chalk/base.css'
+import { App } from 'vue';
+import 'element-plus/lib/theme-chalk/base.css';
 import {
   ElButton,
   ElCheckbox,
@@ -10,7 +10,7 @@ import {
   ElRadio,
   ElTabPane,
   ElTabs
-} from 'element-plus'
+} from 'element-plus';
 
 const components = [
   ElButton,
@@ -22,10 +22,10 @@ const components = [
   ElTabPane,
   ElCheckbox,
   ElLink
-]
+];
 
 export default function (app: App): void {
   for (const component of components) {
-    app.component(component.name, component)
+    app.component(component.name, component);
   }
 }
